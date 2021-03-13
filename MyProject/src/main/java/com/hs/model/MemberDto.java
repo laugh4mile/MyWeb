@@ -36,6 +36,11 @@ public class MemberDto {
 		this.name = name;  
 	}
 
+	@Override
+	public String toString() {
+		return "MemberDto [email=" + email + ", password=" + password + ", name=" + name + "]";
+	}
+
 	
 	
 }
