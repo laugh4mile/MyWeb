@@ -1,5 +1,7 @@
 package com.hs.service;
 
-public interface MemberService {
+import com.hs.model.MemberDto;
 
+public interface MemberService {
+	public void join(MemberDto dto);
 }
