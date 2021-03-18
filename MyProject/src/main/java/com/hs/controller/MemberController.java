@@ -42,6 +42,7 @@ public class MemberController {
 			e.printStackTrace();
 			status = HttpStatus.INTERNAL_SERVER_ERROR;
 		}
+		
 		return new ResponseEntity<Boolean>(status);
 	}
 }
