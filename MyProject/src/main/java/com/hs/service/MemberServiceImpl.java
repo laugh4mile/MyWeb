@@ -6,7 +6,7 @@ public class MemberServiceImpl implements MemberService {
 
 	@Override
 	public void join(MemberDto dto) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub 
 		
 	}
    
