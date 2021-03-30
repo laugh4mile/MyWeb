@@ -45,4 +45,26 @@ public class MemberController {
 		
 		return new ResponseEntity<Boolean>(status);
 	}
+	
+	@ApiOperation(value = "로그인", notes = "입력한 정보를 토대로 로그인한다.", response = Boolean.class)
+	@PostMapping
+	public ResponseEntity<Boolean> logIn(@RequestBody Map<String, String> map){
+		HttpStatus status = HttpStatus.ACCEPTED;
+		
+//		// 회원 정보 담기
+//		MemberDto dto = new MemberDto();
+//		dto.setEmail(map.get("email"));
+//		dto.setName(map.get("name"));
+//		dto.setPassword(map.get("password"));
+//		
+//		try {
+//			memberService.join(dto);
+//			status = HttpStatus.ACCEPTED;
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//			status = HttpStatus.INTERNAL_SERVER_ERROR;
+//		}
+		
+		return new ResponseEntity<Boolean>(status);
+	}
 }
