@@ -24,7 +24,7 @@ public class MemberController {
 	@Autowired
 	MemberService memberService;
 	
-	@ApiOperation(value = "회원 가입", notes = "입력한 정보를 토대로 DB에 정보를 저장한다", response = Boolean.class)
+	@ApiOperation(value = "회원 가입 ", notes = "입력한 정보를 토대로 DB에 정보를 저장한다", response = Boolean.class)
 	@PostMapping
 	public ResponseEntity<Boolean> regist(@RequestBody Map<String, String> map){
 		HttpStatus status = HttpStatus.ACCEPTED;
