@@ -28,7 +28,6 @@ public class MemberController {
 	@PostMapping
 	public ResponseEntity<Boolean> regist(@RequestBody Map<String, String> map){
 		HttpStatus status = HttpStatus.ACCEPTED;
-		System.out.println(map);
 		// 회원 정보 담기
 		MemberDto dto = new MemberDto();
 		dto.setEmail(map.get("email"));
