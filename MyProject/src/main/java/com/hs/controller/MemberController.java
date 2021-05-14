@@ -50,19 +50,19 @@ public class MemberController {
 	public ResponseEntity<Boolean> logIn(@RequestBody Map<String, String> map){
 		HttpStatus status = HttpStatus.ACCEPTED;
 		
-//		// 회원 정보 담기
-//		MemberDto dto = new MemberDto();
-//		dto.setEmail(map.get("email"));
-//		dto.setName(map.get("name"));
-//		dto.setPassword(map.get("password"));
-//		
-//		try {
-//			memberService.join(dto);
-//			status = HttpStatus.ACCEPTED;
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//			status = HttpStatus.INTERNAL_SERVER_ERROR;
-//		}
+		// 회원 정보 담기
+		MemberDto dto = new MemberDto();
+		dto.setEmail(map.get("email"));
+		dto.setName(map.get("name"));
+		dto.setPassword(map.get("password"));
+		
+		try {
+			memberService.join(dto);
+			status = HttpStatus.ACCEPTED;
+		} catch (Exception e) {
+			e.printStackTrace();
+			status = HttpStatus.INTERNAL_SERVER_ERROR;
+		}
 		
 		return new ResponseEntity<Boolean>(status);
 	}
